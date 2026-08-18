@@ -1,3 +1,8 @@
+* {
+    font-family: "Pixelated MS Sans Serif";
+    font-size: 14px;
+}
+
 .banner {
     background-color: #ccddff;
     border: 1px solid #000000;
@@ -11,10 +16,35 @@ body {
     background-color: #667799;
 }
 
+.buttons {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    margin: 10px auto 0;
+    padding: 10px;
+    width: min(800px, 100%);
+}
+
+.buttons-set {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+}
+
 .footer {
     margin: 0 auto;
     text-align: center;
     width: min(800px, 100%);
+}
+
+@font-face {
+    font-family: "Pixelated MS Sans Serif";
+    src: url("../fonts/ms_sans_serif.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Pixelated MS Sans Serif";
+    font-weight: bold;
+    src: url("../fonts/ms_sans_serif_bold.woff2") format("woff2");
 }
 
 .index {
@@ -32,11 +62,9 @@ body {
     width: 200px;
 }
 
-.index-left-about,
-.index-left-currently,
-.index-left-interests,
-.index-middle-welcome,
-.index-right-links,
+.index-left-links,
+.index-left-navigation,
+.index-middle-home,
 .index-right-photography,
 .index-right-updates {
     border: 1px solid #000000;
@@ -44,11 +72,9 @@ body {
     margin-bottom: 10px;
 }
 
-.index-left-about-content,
-.index-left-currently-content,
-.index-left-interests-content,
-.index-middle-welcome-content,
-.index-right-links-content,
+.index-left-links-content,
+.index-left-navigation-content,
+.index-middle-home-content,
 .index-right-photography-content,
 .index-right-updates-content {
     background-color: #ccddff;
@@ -57,17 +83,16 @@ body {
     padding: 10px;
 }
 
-.index-left-about-header,
-.index-left-currently-header,
-.index-left-interests-header,
-.index-middle-welcome-header,
-.index-right-links-header,
+.index-left-links-header,
+.index-left-navigation-header,
+.index-middle-home-header,
 .index-right-photography-header,
 .index-right-updates-header {
     background-color: #667799;
     border-bottom: 1px solid #000000;
     box-sizing: border-box;
     color: #ccddff;
+    font-weight: bold;
     padding: 3px 5px;
 }
 
