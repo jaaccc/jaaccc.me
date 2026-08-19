@@ -79,8 +79,14 @@ body {
 .index-right-updates-content {
     background-color: #ccddff;
     color: #223355;
-    min-height: 80px;
+    min-height: 0px;
     padding: 10px;
+}
+
+.index-left-links-content a,
+.index-left-navigation-content a {
+    color: #223355;
+    text-decoration: none;
 }
 
 .index-left-links-header,
