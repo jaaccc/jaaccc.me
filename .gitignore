@@ -23,6 +23,8 @@
 !_layouts/*
 !_posts/
 !_posts/*
+!projects/
+!projects/*
 !index.html
 !photos.html
 !projects.html

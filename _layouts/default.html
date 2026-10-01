@@ -20,7 +20,18 @@
         <main>
             {% include left.html %}
 
-            <div class="middle">{{ content }}</div>
+            <div class="middle">
+                {% if page.section == "projects" %}
+                <div class="projects">
+                    <div class="projects-header">
+                        projects
+                        <span class="window-close">×</span>
+                    </div>
+
+                    <div class="projects-content">{{ content }}</div>
+                </div>
+                {% else %} {{ content }} {% endif %}
+            </div>
 
             {% include right.html %}
         </main>
