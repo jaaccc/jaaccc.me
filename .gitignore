@@ -19,13 +19,13 @@
 !Gemfile.lock
 !_includes/
 !_includes/*
+!index.html
 !_layouts/
 !_layouts/*
+!photos.html
 !_posts/
 !_posts/*
 !projects/
 !projects/*
-!index.html
-!photos.html
 !projects.html
 !wrangler.jsonc
