@@ -21,14 +21,14 @@
             {% include left.html %}
 
             <div class="middle">
-                {% if page.section == "projects" %}
-                <div class="projects">
-                    <div class="projects-header">
-                        projects
-                        <span class="window-close">×</span>
+                {% if page.section %}
+                <div class="window">
+                    <div class="header">
+                        {{ page.section }}
+                        <span class="close">×</span>
                     </div>
 
-                    <div class="projects-content">{{ content }}</div>
+                    <div class="content">{{ content }}</div>
                 </div>
                 {% else %} {{ content }} {% endif %}
             </div>

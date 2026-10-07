@@ -35,6 +35,10 @@ body {
     overflow-x: auto;
 }
 
+.close {
+    float: right;
+}
+
 @font-face {
     font-family: "Pixelated MS Sans Serif";
     src: url("../fonts/ms_sans_serif.woff2") format("woff2");
@@ -52,45 +56,18 @@ body {
     width: min(800px, 100%);
 }
 
-.about,
-.blog,
-.index,
-.left-links,
-.left-navigation,
-.left-projects,
-.photos,
-.projects,
-.right-photography,
-.right-updates {
+.window {
     border: 1px solid #000000;
     box-sizing: border-box;
     margin-bottom: 10px;
 }
 
-.about-content,
-.blog-content,
-.index-content,
-.left-links-content,
-.left-navigation-content,
-.left-projects-content,
-.photos-content,
-.projects-content,
-.right-photography-content,
-.right-updates-content {
+.content {
     background-color: #ccddff;
     padding: 10px;
 }
 
-.about-header,
-.blog-header,
-.index-header,
-.left-links-header,
-.left-navigation-header,
-.left-projects-header,
-.photos-header,
-.projects-header,
-.right-photography-header,
-.right-updates-header {
+.header {
     background-color: #667799;
     border-bottom: 1px solid #000000;
     box-sizing: border-box;
@@ -134,8 +111,4 @@ main {
     box-sizing: border-box;
     padding: 5px;
     width: 200px;
-}
-
-.window-close {
-    float: right;
 }
