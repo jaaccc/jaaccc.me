@@ -30,4 +30,5 @@
 !projects/
 !projects/*
 !projects.html
+!README.MD
 !wrangler.jsonc
