@@ -35,10 +35,6 @@ body {
     overflow-x: auto;
 }
 
-.close {
-    float: right;
-}
-
 @font-face {
     font-family: "Pixelated MS Sans Serif";
     src: url("../fonts/ms_sans_serif.woff2") format("woff2");
@@ -50,21 +46,19 @@ body {
     src: url("../fonts/ms_sans_serif_bold.woff2") format("woff2");
 }
 
-.footer {
-    margin: 0 auto;
-    text-align: center;
-    width: min(800px, 100%);
-}
-
-.window {
-    border: 1px solid #000000;
-    box-sizing: border-box;
-    margin-bottom: 10px;
+.close {
+    float: right;
 }
 
 .content {
     background-color: #ccddff;
     padding: 10px;
+}
+
+.footer {
+    margin: 0 auto;
+    text-align: center;
+    width: min(800px, 100%);
 }
 
 .header {
@@ -74,6 +68,19 @@ body {
     color: #ccddff;
     font-weight: bold;
     padding: 3px 5px;
+}
+
+@keyframes orb-breathe {
+    0%,
+    100% {
+        opacity: 0.8;
+        transform: translateX(-50%) scale(0.9);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1.1);
+    }
 }
 
 .left {
@@ -107,8 +114,55 @@ main {
     width: min(800px, 100%);
 }
 
+#projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    perspective: 500px;
+}
+
+.projects-icon:hover .projects-orb,
+.projects-icon:focus-visible .projects-orb {
+    animation: orb-breathe 2s ease-in-out infinite;
+}
+
+.projects-icon {
+    display: grid;
+    justify-items: center;
+    position: relative;
+    text-align: center;
+    transition: transform 150ms ease;
+}
+
+.projects-icon img {
+    height: 80px;
+    position: relative;
+    width: 80px;
+    z-index: 1;
+}
+
+.projects-orb {
+    background: radial-gradient(circle, #ffffff 0%, #ffffff 25%, transparent 75%);
+    border-radius: 50%;
+    filter: blur(6px);
+    height: 90px;
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    top: 25px;
+    transform: translateX(-50%);
+    transition: opacity 150ms ease;
+    width: 90px;
+    z-index: 2;
+}
+
 .right {
     box-sizing: border-box;
     padding: 5px;
     width: 200px;
+}
+
+.window {
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    margin-bottom: 10px;
 }

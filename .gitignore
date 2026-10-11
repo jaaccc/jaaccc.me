@@ -10,8 +10,12 @@
 !assets/favicon/*
 !assets/fonts/
 !assets/fonts/*
+!assets/icons/
+!assets/icons/*
 !assets/js/
 !assets/js/*
+!blog/
+!blog/*
 !blog.html
 !_config.yml
 .DS_Store
@@ -23,8 +27,6 @@
 !_layouts/
 !_layouts/*
 !photos.html
-!_posts/
-!_posts/*
 !projects/
 !projects/*
 !projects.html
