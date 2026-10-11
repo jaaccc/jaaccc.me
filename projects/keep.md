@@ -1,7 +1,7 @@
 ---
 layout: default
-title: keep
 section: projects
+title: keep
 ---
 
 # keep
