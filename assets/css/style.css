@@ -55,6 +55,16 @@ body {
     padding: 10px;
 }
 
+.directory {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px;
+    width: min(800px, 100%);
+}
+
 .footer {
     margin: 0 auto;
     text-align: center;
@@ -102,16 +112,6 @@ main {
     box-sizing: border-box;
     padding: 5px;
     width: 400px;
-}
-
-.navigation {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 10px;
-    width: min(800px, 100%);
 }
 
 #projects-grid {
